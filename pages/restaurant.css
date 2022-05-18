@@ -1,0 +1,295 @@
+@import url(c:\Users\zak\Desktop\Ohmyfood-master\base\normalize.css);
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: white;
+}
+
+.fa-arrow-left {
+  position: relative;
+  right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: medium;
+  color: black;
+}
+
+.fa-arrow-left__:active {
+  color: black;
+}
+
+img {
+  max-height: 257px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+
+.global__restaurant__menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.global__restaurant__menu__image {
+  width: 100vw;
+}
+
+.menus__page__resto {
+  background-color: #f7f7f7;
+  width: 100vw;
+  position: relative;
+  bottom: 50px;
+  border-radius: 25px 25px 0 0;
+}
+
+.menus__page__resto__title_coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.menus__page__resto__titre {
+  font-family: "shrikhand", cursive;
+  margin-left: 20px;
+}
+
+.menus__page__resto__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 20px 10px 20px 0;
+  position: relative;
+}
+
+.menus__page__resto__heart:active .fa-solid {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-animation: remplissage_coeur 3s ease-in;
+          animation: remplissage_coeur 3s ease-in;
+}
+
+.menus__page__resto__heart:active .fa-regular {
+  color: transparent;
+}
+
+.menus__page__resto__heart i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.menus__page__resto__heart .fa-solid {
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+
+.menus__page__resto__heart h3 {
+  text-transform: uppercase;
+}
+
+.menus__page__resto h3 {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.menus__page__resto h3::after {
+  content: "";
+  width: 2.5rem;
+  height: 0.25rem;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: #99E2D0;
+}
+
+.menus__display__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px 10px;
+  -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.menus__display__cards__green__check {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  display: none;
+  border-radius: 0 15px 15px 0;
+  -webkit-animation: green_box 1s linear both;
+          animation: green_box 1s linear both;
+}
+
+.menus__display__cards__rotate__icon .fa-check {
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 50%;
+  -webkit-animation: green_check 1s linear 1 normal both;
+          animation: green_check 1s linear 1 normal both;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menus__display__cards__prix {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.menus__display__cards__rotate__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.menus__display__cards h4 {
+  margin: 0;
+  padding: 10px 0 2px 5px;
+}
+
+.menus__display__cards p {
+  margin: 0;
+  padding: 0 0 10px 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menus__display__cards__content {
+  width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menus__display__cards:hover .menus__display__cards__green__check {
+  display: block;
+}
+
+.button__page__menu__violet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.button__page__menu__violet__submit__commande {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  height: 3rem;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  padding: 0 1rem;
+  font-weight: 500;
+  font-family: "roboto", sans-serif;
+  font-size: medium;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=restaurant.css.map */

@@ -1,0 +1,118 @@
+
+@mixin flex_centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center_text {
+    text-align: center;
+    
+}
+
+@mixin cursor_pointer {
+    cursor: pointer;
+    
+}
+
+@mixin white_background_header {
+    background-color: white;
+    
+}
+
+@mixin button__violet__gradient{
+    background-image: linear-gradient($couleur_secondaire,$couleur_principale);
+    height: 3rem;
+   color: white;
+   border-radius: 2rem;
+   border: none;
+   padding: 0 1rem;
+   font-weight: 500;
+   font-family:  $polices_textes;
+   font-size: medium;
+   @include cursor_pointer;
+   @include flex_centre;
+   margin: 0 auto;
+    
+}
+
+@mixin menus__page__resto{
+    background-color: $background_color_main;
+    width: 100vw;
+    position: relative;
+    bottom: 50px;
+    border-radius: $border-radius-menu;   
+}
+
+@mixin menus__page__resto__title_coeur{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+        }
+
+@mixin menu__page__resto__titre {
+    font-family: $polices_logo_titres;
+    margin-left: $margin-left;
+    
+}
+
+@mixin menu__page__resto__heart{
+    @include flex_centre;
+    width: 30px;
+    height: 30px;
+    margin: 20px 10px 20px 0;
+    position: relative;
+
+
+    &:active .fa-solid{
+        opacity: 1;
+        transform: scale(1.2);
+        animation: remplissage_coeur 3s ease-in;
+    
+    }
+
+    &:active .fa-regular{
+        color: transparent;
+    }
+
+
+    & i{
+        @include flex_centre;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+        .fa-solid{
+            color: transparent;
+            background-image: linear-gradient(to top,$couleur_secondaire, $couleur_principale);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+        }
+
+            & h3{
+                text-transform: $text_uppercase;
+            }
+
+    }
+
+    @mixin flex_price_menu {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;    
+        }
+
+        @mixin footer {
+                position: relative;
+                bottom: 50px;   
+        }
+
+        
+    
+    
+
+
+

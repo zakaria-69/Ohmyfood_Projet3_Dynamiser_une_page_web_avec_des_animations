@@ -1,0 +1,173 @@
+                                        /*Animation du loading spinner au chargement de la page*/
+
+/*.loader_full_screen{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    z-index: -20000;
+    animation: opacity_full_screen 4s linear;
+    opacity: 0;
+}
+
+.loader_full_screen::after{
+    width: 0;
+    height: 0;
+}
+
+
+.loader{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+    border: solid 10px;
+    @include flex_centre;
+    margin: 0;
+    padding: 0;
+    border-top-color: $couleur_principale;
+    border-right-color: $couleur_secondaire;
+    border-bottom-color: $couleur_tertiaire;
+    border-left-color: transparent;
+    border-radius: 50%;
+    animation: spin 4s linear;
+    z-index: 2;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    @include flex_centre;
+    color: maroon;
+    font-size: 50px;
+    transform: rotate(230deg);
+}
+
+@keyframes spin{
+    0%{
+        transform: translate(-50%,-50%) rotate(0) ;
+       
+        
+    }
+
+    
+    50%{
+        transform: translate(-50%,-50%) rotate(180deg);
+       
+    }
+
+    75%{
+        transform:translate(-50%,-50%) rotate(360deg);
+        
+        
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+        
+        
+        
+       
+    }
+}
+
+@keyframes opacity_full_screen{
+    0%{
+        opacity: 0.8;
+        z-index: 1;
+    }
+
+    50%{
+        opacity: 0.8;
+        z-index: 1;
+    }
+
+    100%{
+        opacity: 0;
+        z-index: 1;
+        
+         
+    }
+
+
+}/*
+
+                                /*Animation bouton eclairci au survol*/
+
+button:hover{
+    opacity: 0.8;
+}
+
+
+                                /*Animation remplissage coeur*/
+
+
+@keyframes remplissage_coeur{
+    0%{
+            opacity: 0.2;
+    }
+
+    25%{
+        opacity: 0.4;
+    }
+
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    }
+
+
+                                            /*animation green check rotation*/
+
+ @keyframes green_check {
+     0%{
+       transform: rotate(0deg);
+     } 
+
+     25%{
+         transform: rotate(90deg);
+     }
+
+     50%{
+         transform: rotate(180deg);
+     }
+
+
+     75%{
+         transform: rotate(240deg);
+     }
+     
+     100%{
+         transform: rotate(360deg); 
+     }
+}
+
+                                        /*animation carré vert apparition*/
+
+
+@keyframes green_box {
+
+    0%{
+        transform: translateX(100%);
+    }
+
+    50%{
+        transform: translateX(50%);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+    
+}
