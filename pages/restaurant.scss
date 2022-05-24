@@ -185,6 +185,37 @@ h3{
 }
 
 
+@media screen and(min-width:650px){
+    .menus__page__resto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+
+        &__title_coeur{
+            width: 100%;
+        }
+    }
+
+    .global__restaurant{
+        width: 45vw;
+        min-width: 45vw;
+    }
+
+    &__menu__display{
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+
+
+
+
+
 
 
 

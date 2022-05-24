@@ -1,4 +1,4 @@
-@import url(c:\Users\zak\Desktop\Ohmyfood-master\base\normalize.css);
+@import url(c:\Users\zak\Desktop\OhMyFood_2\base\normalize.css);
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -291,5 +291,36 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 650px) {
+  .menus__page__resto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menus__page__resto__title_coeur {
+    width: 100%;
+  }
+  .global__restaurant {
+    width: 45vw;
+    min-width: 45vw;
+  }
+  __menu__display {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=restaurant.css.map */
