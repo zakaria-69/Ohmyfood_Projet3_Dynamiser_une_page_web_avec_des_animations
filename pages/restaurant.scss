@@ -108,7 +108,7 @@ h3{
         margin: 20px 10px;
         box-shadow: 0.25rem 0.25rem 1rem rgba( 0, 0, 0, 0.15);
         cursor: pointer;
-        animation: delay_items_menu 2s linear both;
+        animation: delay_items_menu 800ms linear both;
 
             &__green__check{
                 background-color: $couleur_tertiaire;
@@ -116,7 +116,7 @@ h3{
                 width: 5rem;  
                 display: none;
                 border-radius: 0 15px 15px 0;
-                animation: green_box 1s linear both;
+                animation: green_box 500ms linear both;
                 
                 
             }
@@ -125,7 +125,7 @@ h3{
                 background-color: white;
                 color: $couleur_tertiaire;
                 border-radius: 50%;
-                animation: green_check 1s linear 1 normal both;
+                animation: green_check 500ms linear 1 normal both;
                 width: 1.5rem;
                 height: 1.5rem;
                 @include flex_centre;
@@ -191,19 +191,19 @@ h3{
     }
 
     .delay_1{
-        animation: delay_items_menu 2s .2s linear both;
+        animation: delay_items_menu 800ms .2s linear both;
     }
 
     .delay_2{
-        animation: delay_items_menu 2s .6s linear both;
+        animation: delay_items_menu 800ms .4s linear both;
     }
 
     .delay_3{
-        animation: delay_items_menu 2s 1s linear both;
+        animation: delay_items_menu 800ms .6s linear both;
     }
 
     .delay_4{
-        animation: delay_items_menu 2s 1.2s linear both;
+        animation: delay_items_menu 800ms .8s linear both;
     }
 
 

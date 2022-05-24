@@ -455,8 +455,8 @@ h3 {
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  -webkit-animation: delay_items_menu 2s linear both;
-          animation: delay_items_menu 2s linear both;
+  -webkit-animation: delay_items_menu 800ms linear both;
+          animation: delay_items_menu 800ms linear both;
 }
 
 .menus__display__cards__green__check {
@@ -473,16 +473,16 @@ h3 {
   width: 5rem;
   display: none;
   border-radius: 0 15px 15px 0;
-  -webkit-animation: green_box 1s linear both;
-          animation: green_box 1s linear both;
+  -webkit-animation: green_box 500ms linear both;
+          animation: green_box 500ms linear both;
 }
 
 .menus__display__cards__rotate__icon .fa-check {
   background-color: white;
   color: #99E2D0;
   border-radius: 50%;
-  -webkit-animation: green_check 1s linear 1 normal both;
-          animation: green_check 1s linear 1 normal both;
+  -webkit-animation: green_check 500ms linear 1 normal both;
+          animation: green_check 500ms linear 1 normal both;
   width: 1.5rem;
   height: 1.5rem;
   display: -webkit-box;
@@ -552,23 +552,23 @@ h3 {
 }
 
 .delay_1 {
-  -webkit-animation: delay_items_menu 2s .2s linear both;
-          animation: delay_items_menu 2s .2s linear both;
+  -webkit-animation: delay_items_menu 800ms .2s linear both;
+          animation: delay_items_menu 800ms .2s linear both;
 }
 
 .delay_2 {
-  -webkit-animation: delay_items_menu 2s .6s linear both;
-          animation: delay_items_menu 2s .6s linear both;
+  -webkit-animation: delay_items_menu 800ms .4s linear both;
+          animation: delay_items_menu 800ms .4s linear both;
 }
 
 .delay_3 {
-  -webkit-animation: delay_items_menu 2s 1s linear both;
-          animation: delay_items_menu 2s 1s linear both;
+  -webkit-animation: delay_items_menu 800ms .6s linear both;
+          animation: delay_items_menu 800ms .6s linear both;
 }
 
 .delay_4 {
-  -webkit-animation: delay_items_menu 2s 1.2s linear both;
-          animation: delay_items_menu 2s 1.2s linear both;
+  -webkit-animation: delay_items_menu 800ms .8s linear both;
+          animation: delay_items_menu 800ms .8s linear both;
 }
 
 .button__page__menu__violet {
