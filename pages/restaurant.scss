@@ -67,6 +67,18 @@ h3{
 &__heart{
     @include flex_centre;
     @include menu__page__resto__heart;
+    cursor: pointer;
+
+    &:hover .fa-solid{
+        opacity: 1;
+        transform: scale(1.2);
+        animation: remplissage_coeur 3s ease-in;
+    
+    }
+
+    &:hover .fa-regular{
+        color: transparent;
+    }
     }
 
     & h3{
@@ -95,6 +107,8 @@ h3{
         background-color: white;
         margin: 20px 10px;
         box-shadow: 0.25rem 0.25rem 1rem rgba( 0, 0, 0, 0.15);
+        cursor: pointer;
+        animation: delay_items_menu 2s linear both;
 
             &__green__check{
                 background-color: $couleur_tertiaire;
@@ -137,6 +151,8 @@ h3{
         & h4{
             margin: 0;
             padding: 10px 0 2px 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
           
            
         }
@@ -174,6 +190,25 @@ h3{
        
     }
 
+    .delay_1{
+        animation: delay_items_menu 2s .2s linear both;
+    }
+
+    .delay_2{
+        animation: delay_items_menu 2s .6s linear both;
+    }
+
+    .delay_3{
+        animation: delay_items_menu 2s 1s linear both;
+    }
+
+    .delay_4{
+        animation: delay_items_menu 2s 1.2s linear both;
+    }
+
+
+   
+
 
 .button__page__menu__violet{
     @include flex_centre;
@@ -184,6 +219,10 @@ h3{
     }
 }
 
+
+
+
+                                                                                            /*Media queries pages menus*/ 
 
 @media screen and(min-width:650px){
     .menus__page__resto{
@@ -210,10 +249,6 @@ h3{
     }
     
 }
-
-
-
-
 
 
 

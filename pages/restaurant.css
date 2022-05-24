@@ -96,6 +96,7 @@ h3 {
   height: 30px;
   margin: 20px 10px 20px 0;
   position: relative;
+  cursor: pointer;
 }
 
 .menus__page__resto__heart:active .fa-solid {
@@ -138,6 +139,18 @@ h3 {
   text-transform: uppercase;
 }
 
+.menus__page__resto__heart:hover .fa-solid {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-animation: remplissage_coeur 3s ease-in;
+          animation: remplissage_coeur 3s ease-in;
+}
+
+.menus__page__resto__heart:hover .fa-regular {
+  color: transparent;
+}
+
 .menus__page__resto h3 {
   text-transform: uppercase;
   margin-left: 20px;
@@ -164,6 +177,9 @@ h3 {
   margin: 20px 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-animation: delay_items_menu 2s linear both;
+          animation: delay_items_menu 2s linear both;
 }
 
 .menus__display__cards__green__check {
@@ -236,6 +252,8 @@ h3 {
 .menus__display__cards h4 {
   margin: 0;
   padding: 10px 0 2px 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menus__display__cards p {
@@ -254,6 +272,26 @@ h3 {
 
 .menus__display__cards:hover .menus__display__cards__green__check {
   display: block;
+}
+
+.delay_1 {
+  -webkit-animation: delay_items_menu 2s .2s linear both;
+          animation: delay_items_menu 2s .2s linear both;
+}
+
+.delay_2 {
+  -webkit-animation: delay_items_menu 2s .6s linear both;
+          animation: delay_items_menu 2s .6s linear both;
+}
+
+.delay_3 {
+  -webkit-animation: delay_items_menu 2s 1s linear both;
+          animation: delay_items_menu 2s 1s linear both;
+}
+
+.delay_4 {
+  -webkit-animation: delay_items_menu 2s 1.2s linear both;
+          animation: delay_items_menu 2s 1.2s linear both;
 }
 
 .button__page__menu__violet {
@@ -293,6 +331,7 @@ h3 {
   margin: 0 auto;
 }
 
+/*Media queries pages menus*/
 @media screen and (min-width: 650px) {
   .menus__page__resto {
     display: -webkit-box;
