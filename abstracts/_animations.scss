@@ -1,5 +1,7 @@
                                         /*Animation du loading spinner au chargement de la page*/
 
+                                        /*Animation du loading spinner au chargement de la page*/
+
 .loader_full_screen{
     width: 100vw;
     height: 100vh;
@@ -94,80 +96,98 @@
     }
 
 
-
+}
 
                                 /*Animation bouton eclairci au survol*/
 
-button:hover{
-    opacity: 0.8;
-}
+                                button:hover{
+                                    opacity: 0.8;
+                                }
+                                
+                                
+                                                                /*Animation remplissage coeur*/
+                                
+                                
+                                @keyframes remplissage_coeur{
+                                    0%{
+                                            opacity: 0.2;
+                                    }
+                                
+                                    25%{
+                                        opacity: 0.4;
+                                    }
+                                
+                                    50%{
+                                        opacity: 0.6;
+                                    }
+                                    75%{
+                                        opacity: 0.8;
+                                    }
+                                
+                                    100%{
+                                        opacity: 1;
+                                    }
+                                    }
+                                
+                                
+                                                                            /*animation green check rotation*/
+                                
+                                 @keyframes green_check {
+                                     0%{
+                                       transform: rotate(0deg);
+                                     } 
+                                
+                                     25%{
+                                         transform: rotate(90deg);
+                                     }
+                                
+                                     50%{
+                                         transform: rotate(180deg);
+                                     }
+                                
+                                
+                                     75%{
+                                         transform: rotate(240deg);
+                                     }
+                                     
+                                     100%{
+                                         transform: rotate(360deg); 
+                                     }
+                                }
+                                
+                                                                        /*animation carré vert apparition*/
+                                
+                                
+                                @keyframes green_box {
+                                
+                                    0%{
+                                       width: 0;
+                                
+                                    }
+                                
+                                    50%{
+                                        width: 2rem;
+                                    }
+                                
+                                    100%{
+                                        width: 4rem;
+                                                                            
+                                    }
+                                    
+                                }
 
 
-                                /*Animation remplissage coeur*/
 
+                                                        /*Animation delay_elements_cards_menus*/
 
-@keyframes remplissage_coeur{
+@keyframes delay_items_menu{
+
     0%{
-            opacity: 0.2;
-    }
-
-    25%{
-        opacity: 0.4;
-    }
-
-    50%{
-        opacity: 0.6;
-    }
-    75%{
-        opacity: 0.8;
+        transform: scale(0);
     }
 
     100%{
-        opacity: 1;
-    }
-    }
-
-
-                                            /*animation green check rotation*/
-
- @keyframes green_check {
-     0%{
-       transform: rotate(0deg);
-     } 
-
-     25%{
-         transform: rotate(90deg);
-     }
-
-     50%{
-         transform: rotate(180deg);
-     }
-
-
-     75%{
-         transform: rotate(240deg);
-     }
-     
-     100%{
-         transform: rotate(360deg); 
-     }
-}
-
-                                        /*animation carré vert apparition*/
-
-
-@keyframes green_box {
-
-    0%{
-        transform: translateX(100%);
+        transform: scale(1);
     }
 
-    50%{
-        transform: translateX(50%);
-    }
-
-    100%{
-        transform: translate(0%);
-    }
-    
 }
