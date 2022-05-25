@@ -1,0 +1,30 @@
+/*Initialisation début de projet*/
+*, ::before,::after{
+    box-sizing: border-box;
+
+}
+
+html{
+    width: 100vw;
+}
+
+p{
+    font-family: $polices_textes;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+main a{
+    color: black;
+}
+
+body{
+    margin: 0;
+    font-family: $polices_textes;
+}

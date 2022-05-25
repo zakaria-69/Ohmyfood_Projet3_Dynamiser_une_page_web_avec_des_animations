@@ -1,0 +1,42 @@
+/*couleur primaire :#9356DC , couleur secondaire:#FF79DA , couleur tertiaire :#99E2D0 , */
+/*Police logo et titres shrikhand, textes:roboto */
+
+                                            /*Section location géographique et accroche clientelle*/
+                                            .location{
+                                                background-color: #f1eeee;
+                                                margin: 0;
+                                                height: 3rem;
+                                                font-weight: 600;
+                                                @include flex_centre;
+                                                
+                                            
+                                                & p{
+                                                    @include flex_centre;
+                                                    gap: 1rem;
+                                                    margin: 0;
+                                                    position: relative;   
+                                                }
+                                            }
+                                            
+                                            .description{
+                                                @include flex_centre;
+                                                flex-direction: column;
+                                                width: 100%;
+                                                padding: 1rem 0 3rem 0;
+                                                background-color: #f7f7f7;
+                                            
+                                                    & h2{
+                                                        width: 70%;
+                                                        @include center_text;
+                                                        font-weight: 600;
+                                                    }
+                                                        & p{
+                                                            width: 80%;
+                                                            @include center_text;
+                                            
+                                                        }
+                                                            & .description__submit__menu{
+                                                             @include button__violet__gradient;
+                                                                
+                                                            }
+                                            }

@@ -1,0 +1,79 @@
+                            /*section fonctionnement recherche et navigation*/
+
+                            .fonctionnement{
+                                @include flex_centre;
+                                flex-direction: column;
+                                
+                            
+                            
+                                & h2{
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    width: 90%;
+                                }
+                            
+                                    &__button{
+                                        margin: .5rem 0;
+                                        height: 4rem;
+                                        width: 90vw;
+                                        @include cursor_pointer;
+                                        border-radius: 1rem;
+                                        box-shadow: .25rem 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.13);
+                                        border: none;
+                                        font-weight: 500;
+                                        font-family: $polices_textes;
+                                        background-color: #f7f7f7;
+                                        @include flex_centre;
+                            
+                                        &:hover{
+                                            background-color: rgba(233, 214, 245,0.5);
+                                        }
+                            
+                                        }
+                            
+                                        & ol{
+                                            padding: 0;
+                                            list-style-type: none;
+                                            counter-reset: myCounter;
+                                            position: relative;
+                                            
+                                            & li::before{
+                                                counter-increment: myCounter 1 ;
+                                                content: counter( myCounter ) " ";
+                                                width: 1.5rem;
+                                                height: 1.5rem;
+                                                @include flex_centre;
+                                                position: absolute;
+                                                left: -0.5rem;
+                                                background-color: $couleur_principale;
+                                                color: white;
+                                                border-radius: 50%;
+                                            
+                                            }
+                                                & li{
+                            
+                                                    display: flex;
+                                                    align-items: center;
+                            
+                                                    & i{
+                                                        color: #7e7e7e; 
+                                                        font-size: 110%;
+                                                        margin-right: 30px; 
+                                                        }
+                            
+                                                        &:hover i{
+                                                            color: $couleur_principale;
+                                                        }
+                            
+                                                        & p{
+                                                            font-size:110%;
+                                                            margin-right: 20px;
+                                        
+                                                        }
+                            
+                                                }
+                            
+                                        }
+                            
+                                    }                                            

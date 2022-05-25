@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\css"
+		},
+		{
+			"path": "..\\images"
+		},
+		{
+			"path": "..\\pages"
+		},
+		{
+			"path": "..\\sass"
+		},
+		{
+			"path": ".."
+		}
+	]
+}
