@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Animation du loading spinner au chargement de la page*/
+/*Animation du loading spinner au chargement de la page*/
 .loader_full_screen {
   width: 100vw;
   height: 100vh;
@@ -275,7 +276,7 @@ button:hover {
 }
 
 html {
-  width: 100vw;
+  width: 100%;
 }
 
 p {
