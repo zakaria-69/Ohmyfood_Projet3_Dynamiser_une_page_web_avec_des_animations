@@ -263,7 +263,7 @@
                                                         width: 100%;
                                                     
                                                             &__image{
-                                                                width: 100vw;
+                                                                width: 100%;
                                                             }
                                                     }
                                                     
@@ -428,7 +428,7 @@
                                                     
                                                     .button__page__menu__violet{
                                                         @include flex_centre;
-                                                        width: 100vw;
+                                                        width: 100%;
                                                     
                                                         &__submit__commande{
                                                             @include button__violet__gradient;

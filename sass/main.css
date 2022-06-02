@@ -806,12 +806,12 @@ h3 {
 }
 
 .global__restaurant__menu__image {
-  width: 100vw;
+  width: 100%;
 }
 
 .menus__page__resto {
   background-color: #f7f7f7;
-  width: 100vw;
+  width: 100%;
   position: relative;
   bottom: 50px;
   border-radius: 25px 25px 0 0;
@@ -1060,7 +1060,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .button__page__menu__violet__submit__commande {
